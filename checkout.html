@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!--  -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.0.0-web/css/all.min.css" />
+  </head>
+
+  <body>
+    <form action="" id="checkoutForm" class="checkoutForm">
+      <div class="grid wide">
+        <div class="checkoutForm__container row">
+          <div class="checkoutForm__main col l-8 m-12 c-12">
+            <a href="/" class="checkoutForm__logo hide-on-mobile-tablet">
+              <img
+                src="https://bizweb.sapocdn.net/100/438/408/themes/848101/assets/checkout_logo.png?1648823126798"
+                alt=""
+              />
+            </a>
+            <div class="checkoutForm__main-content row">
+              <div class="checkoutForm__info col l-6 m-6 c-12">
+                <div class="checkoutForm__info-title">
+                  <div class="checkoutForm__title">
+                    <i class="checkoutForm__icon fa-regular fa-address-card"></i>
+                    Thông tin giao hàng
+                  </div>
+                  <a href="" class="checkoutForm__login">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>Đăng nhập</span>
+                  </a>
+                </div>
+                <div class="checkoutForm__info-content">
+                  <div class="form-field">
+                    <input type="text" class="form-input" placeholder=" " />
+                    <label for="" class="form-label">Họ và tên</label>
+                  </div>
+                  <div class="form-field">
+                    <input type="text" class="form-input" placeholder=" " />
+                    <label for="" class="form-label">Số điện thoại</label>
+                  </div>
+                  <div class="form-field">
+                    <input type="text" class="form-input" placeholder=" " />
+                    <label for="" class="form-label">Email</label>
+                  </div>
+                  <div class="form-field">
+                    <input type="text" class="form-input" placeholder=" " />
+                    <label for="" class="form-label">Địa chỉ</label>
+                  </div>
+                  <div class="form-field">
+                    <select name="" id="" class="form-select">
+                      <option value="">---</option>
+                      <option value="">Hà Nội</option>
+                      <option value="">Hồ Chí Minh</option>
+                      <option value="">Đà Nẵng</option>
+                    </select>
+                    <label for="" class="form-label select">Tỉnh thành</label>
+                  </div>
+                  <div class="form-field">
+                    <select name="" id="" class="form-select">
+                      <option value="">---</option>
+                      <option value="">Hà Nội</option>
+                      <option value="">Hồ Chí Minh</option>
+                      <option value="">Đà Nẵng</option>
+                    </select>
+                    <label for="" class="form-label select">Quận huyện</label>
+                  </div>
+                  <div class="form-field">
+                    <select name="" id="" class="form-select">
+                      <option value="">---</option>
+                      <option value="">Hà Nội</option>
+                      <option value="">Hồ Chí Minh</option>
+                      <option value="">Đà Nẵng</option>
+                    </select>
+                    <label for="" class="form-label select">Phường xã</label>
+                  </div>
+                  <div class="form-field">
+                    <textarea
+                      name=""
+                      id=""
+                      class="form-input textarea"
+                      placeholder="Ghi chú (tùy chọn)"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="checkoutForm__shipping col l-6 m-6 c-12">
+                <div class="checkoutForm__title">
+                  <i class="fa-solid fa-truck"></i>
+                  Vận chuyển
+                </div>
+                <div class="checkoutForm__shipping-content">
+                  <div class="shipping-not-selected">Vui lòng nhập thông tin giao hàng</div>
+                  <div class="shipping-selected">
+                    <div class="shipping-selected__text-left">
+                      Miễn phí vẫn chuyển
+                      <span>20.000đ</span>
+                    </div>
+                    <div class="shipping-selected__text-right">Miễn phí</div>
+                  </div>
+                </div>
+                <div class="checkoutForm__method">
+                  <div class="checkoutForm__title checkoutForm__method-title">
+                    <i class="fa-regular fa-credit-card"></i>
+                    Thanh toán
+                  </div>
+                  <div class="checkoutForm__method-content">
+                    <div class="checkoutForm__method-item">
+                      <input
+                        type="radio"
+                        name="payment-method"
+                        class="payment-method-radio"
+                        id="payment_vnpay"
+                      />
+                      <label for="payment_vnpay" class="payment-method-label">
+                        <div class="payment-method-label__text">Thanh toán qua VNPAY</div>
+                        <div
+                          class="payment-method-label__logo"
+                          style="
+                            background: url('	https://bizweb.dktcdn.net/assets/themes_support/payment_icon_vnpay.png')
+                              no-repeat center center;
+                          "
+                        ></div>
+                      </label>
+                    </div>
+                    <div class="checkoutForm__method-item">
+                      <input
+                        type="radio"
+                        name="payment-method"
+                        class="payment-method-radio"
+                        id="payment_momo"
+                      />
+                      <label for="payment_momo" class="payment-method-label">
+                        <div class="payment-method-label__text">Thanh toán qua Ví MoMo</div>
+                        <div
+                          class="payment-method-label__logo"
+                          style="
+                            background: url('	https://bizweb.dktcdn.net/assets/admin/images/logomm1.png?v=1')
+                              no-repeat center center;
+                            background-size: 28px 28px;
+                          "
+                        ></div>
+                      </label>
+                    </div>
+                    <div class="checkoutForm__method-item">
+                      <input
+                        type="radio"
+                        name="payment-method"
+                        class="payment-method-radio"
+                        id="payment_cod"
+                      />
+                      <label for="payment_cod" class="payment-method-label">
+                        <div class="payment-method-label__text">Thanh toán khi giao hàng (COD)</div>
+                        <div class="payment-method-label__logo">
+                          <i class="fa-solid fa-money-bill-1-wave"></i>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkoutForm__btn-checkout col l-0 m-12 c-12 row">
+                <div class="base-btn col l-12 m-12 c-12">ĐẶT HÀNG</div>
+                <a href="" class="previous-cart col l-0 m-12 m-o-3 c-12 c-o-3">
+                  <i class="previous-cart__icon fa-solid fa-angle-left"></i>
+                  Quay về giỏ hàng</a
+                >
+              </div>
+              <div class="checkoutForm__footer col l-12">
+                <div class="checkoutForm__policy">Điều khoản sử dụng</div>
+                <p class="checkoutForm__policy-text">
+                  Sau khi
+                  <b>hoàn tất đơn hàng</b>
+                  khoảng 60-90 phút (trong giờ hành chính), YODY sẽ nhanh chóng gọi điện xác nhận
+                  lại thời gian giao hàng với bạn. Yody Love!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="checkoutForm__sidebar col l-4 m-12 c-12">
+            <a href="" class="checkoutForm__logo hide-on-pc">
+              <img
+                src="https://bizweb.sapocdn.net/100/438/408/themes/848101/assets/checkout_logo.png?1649035388560"
+                alt=""
+              />
+            </a>
+            <div class="checkoutForm__sidebar-header">
+              <div class="checkoutForm__title">Đơn hàng (2 sản phẩm)</div>
+            </div>
+            <div class="checkoutForm__sidebar-content">
+              <div class="checkoutForm__product-list edit-scrollbar">
+                <div class="checkoutForm__product-item">
+                  <div class="checkoutForm__product-img">
+                    <img
+                      src="https://bizweb.dktcdn.net/thumb/compact/100/438/408/products/tsk5039-xdu-3.jpg"
+                      alt=""
+                    />
+                    <span class="checkoutForm__product-qty">1</span>
+                  </div>
+                  <div class="checkoutForm__product-name">
+                    <p>Áo phông danh cho trẻ em tinh nghịch Áo phông danh cho trẻ em tinh nghịch</p>
+                    <span class="checkoutForm__product-color-size">Xanh dương / M</span>
+                  </div>
+                  <div class="checkoutForm__product-price">169.000đ</div>
+                </div>
+                <div class="checkoutForm__product-item">
+                  <div class="checkoutForm__product-img">
+                    <img
+                      src="https://bizweb.sapocdn.net/thumb/large/100/438/408/products/apm3635-nau-qsm3025-den-1.jpg?v=1648692553000"
+                      alt=""
+                    />
+                    <span class="checkoutForm__product-qty">1</span>
+                  </div>
+                  <div class="checkoutForm__product-name">
+                    <p>Áo phông danh cho trẻ em tinh nghịch Áo phông danh cho trẻ em tinh nghịch</p>
+                    <span class="checkoutForm__product-color-size">Xanh dương / M</span>
+                  </div>
+                  <div class="checkoutForm__product-price">169.000đ</div>
+                </div>
+                <div class="checkoutForm__product-item">
+                  <div class="checkoutForm__product-img">
+                    <img
+                      src="https://bizweb.sapocdn.net/thumb/large/100/438/408/products/qjn4014-tru-apn3700-gre-3.jpg?v=1641958600000"
+                      alt=""
+                    />
+                    <span class="checkoutForm__product-qty">1</span>
+                  </div>
+                  <div class="checkoutForm__product-name">
+                    <p>Áo phông danh cho trẻ em tinh nghịch Áo phông danh cho trẻ em tinh nghịch</p>
+                    <span class="checkoutForm__product-color-size">Xanh dương / M</span>
+                  </div>
+                  <div class="checkoutForm__product-price">169.000đ</div>
+                </div>
+              </div>
+              <div class="checkoutForm__reductionCode row">
+                <div class="form-field col l-8 m-8 c-8">
+                  <input type="text" class="form-input" placeholder=" " />
+                  <label for="" class="form-label">Nhập mã giảm giá</label>
+                </div>
+                <div class="col l-4 m-4 c-4">
+                  <div class="base-btn">Áp dụng</div>
+                </div>
+              </div>
+              <div class="checkoutForm__oder-summary">
+                <div class="checkoutForm__oder-summary__row">
+                  <div class="checkoutForm__oder-summary-name">Tạm tính</div>
+                  <div class="checkoutForm__oder-summary-price">767.000đ</div>
+                </div>
+                <div class="checkoutForm__oder-summary__row">
+                  <div class="checkoutForm__oder-summary-name">Phi vận chuyển</div>
+                  <div class="checkoutForm__oder-summary-price">Miễn phí</div>
+                </div>
+                <div class="checkoutForm__oder-summary__row">
+                  <div class="checkoutForm__oder-summary-name">Tổng cộng</div>
+                  <div class="checkoutForm__oder-summary-price">767.000đ</div>
+                </div>
+              </div>
+              <div class="checkoutForm__btn-checkout hide-on-mobile-tablet row">
+                <a href="" class="previous-cart col l-6">
+                  <i class="previous-cart__icon fa-solid fa-angle-left"></i>
+                  Quay về giỏ hàng</a
+                >
+                <div class="base-btn col l-4">ĐẶT HÀNG</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Custom slick Js -->
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/tab_ui.js"></script>
+  </body>
+</html>
